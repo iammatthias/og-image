@@ -14,7 +14,7 @@ function getCss(theme: string, fontSize: string) {
     body {
         background: ${background};
         background-image: radial-gradient(circle at 50% 50%, rgba(249, 254, 255, 1), rgba(253, 255, 252, .2)), url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='6' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-        background-size: 100px 100px;
+        background-size: cover;
         height: 100vh;
         display: flex;
         text-align: center;
