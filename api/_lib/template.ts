@@ -78,7 +78,7 @@ export function getHtml(parsedReq: ParsedRequest) {
     <meta charset="utf-8">
     <title>Generated Image</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Playfair+Display:wght@400;900&family=Space+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Space+Mono&display=swap" rel="stylesheet">
     <style>
         ${getCss(theme, fontSize)}
     </style>
