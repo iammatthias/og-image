@@ -51,7 +51,7 @@ function getArray(stringOrArray: string[] | string | undefined): string[] {
 }
 
 function getDefaultImages(images: string[], theme: Theme): string[] {
-  const defaultImage = theme === "light" ? "http://iammatthias.com/images/safari-pinned-tab.svg" : "http://iammatthias.com/images/safari-pinned-tab.svg";
+  const defaultImage = theme === "light" ? "https://og.iammatthias.com/img/logo-dark.png" : "https://og.iammatthias.com/img/logo-light.png";
 
   if (!images || !images[0]) {
     return [defaultImage];
