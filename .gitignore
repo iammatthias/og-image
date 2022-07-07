@@ -3,4 +3,6 @@
 node_modules
 api/dist
 public/dist
-.DS_store
+
+api/_lib/template.ts
+.DS_Store
