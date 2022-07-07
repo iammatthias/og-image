@@ -1,16 +1,6 @@
 import React from 'react';
 import { NextPage } from 'next';
-import {
-    Heading,
-    VStack,
-    Text,
-    Link as ChLink,
-    Flex,
-    OrderedList,
-    ListItem,
-    Code,
-    Image,
-} from '@chakra-ui/react';
+import { Heading, VStack, Text, Link as ChLink, Flex, Code } from '@chakra-ui/react';
 import Head from 'next/head';
 
 const imgProps = [
@@ -55,13 +45,13 @@ const imgProps = [
 const IndexPage: NextPage = () => {
     const title = 'Generate OpenGraph Images Programmatically';
     const ogImageUrl = `${
-        process.env.NEXT_PUBLIC_VERCEL_ENV ? 'https://superblog.ai/og/api/image' : '/api/image'
+        process.env.NEXT_PUBLIC_VERCEL_ENV ? 'https://og.iammatthias/api/image' : '/api/image'
     }?title=${title}`;
     return (
         <Flex w="100%" justifyContent="center" p={10} wordBreak="break-word">
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <title>{title} | Superblog</title>
+                <title>og.iammatthias</title>
                 <meta property="og:image" content={ogImageUrl} />
                 <meta property="og:title" content={title} />
                 <meta property="og:type" content="article" />
@@ -77,17 +67,10 @@ const IndexPage: NextPage = () => {
                 <Text fontSize="lg" as="h2">
                     API to create opengraph images programmatically.
                 </Text>
-                <ChLink
-                    isExternal
-                    href="https://github.com/s-kris/super-og-images"
-                    textDecor="underline"
-                >
-                    Github Project
-                </ChLink>{' '}
                 <Text pt={10}>
                     Use this as your open graph image source{' '}
-                    <ChLink isExternal href="https://superblog.ai/og/api/image?title=hello%20world">
-                        <Code>https://superblog.ai/og/api/image?title=hello%20world</Code>{' '}
+                    <ChLink isExternal href="https://og.iammatthias/api/image?title=hello%20world">
+                        <Code>https://og.iammatthias/api/image?title=hello%20world</Code>{' '}
                     </ChLink>
                 </Text>
                 <Flex w="100%" pt={15} flexDir="column">
@@ -106,10 +89,10 @@ const IndexPage: NextPage = () => {
                     </Heading>
                     <ChLink
                         isExternal
-                        href="https://superblog.ai/og/api/image?title=this%20is%20an%20advanced%20image&background=linear-gradient%28to+right%2C+%238e2de2%2C+%234a00e0%29%3B&titleColor=white"
+                        href="https://og.iammatthias/api/image?title=this%20is%20an%20advanced%20image&background=linear-gradient%28to+right%2C+%238e2de2%2C+%234a00e0%29%3B&titleColor=white"
                     >
                         <Code>
-                            https://superblog.ai/og/api/image?title=this%20is%20an%20advanced%20image&background=linear-gradient%28to+right%2C+%238e2de2%2C+%234a00e0%29%3B&titleColor=white
+                            https://og.iammatthias/api/image?title=this%20is%20an%20advanced%20image&background=linear-gradient%28to+right%2C+%238e2de2%2C+%234a00e0%29%3B&titleColor=white
                         </Code>{' '}
                     </ChLink>
                 </Flex>
